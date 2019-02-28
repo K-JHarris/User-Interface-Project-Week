@@ -11,16 +11,16 @@
 </head>
 
 <body>
+<!-- <h1>You got this!  Good luck.</h1> -->
+<nav class="nav-container">
+	<p class="nav-logo">S&J</p>
 
-	<h1>You got this!  Good luck.</h1>
-
-<!-- Menu Content 
-S&J
-
-Home
-Services
-Contact
--->
+	<div class="nav-item-container"> <!--this will be the hamburger-->
+		<a href="#" class="nav-item">Home</a>
+		<a href="#" class="nav-item">Services</a>
+		<a href="#" class="nav-item">Contact</a>
+	</div>
+</nav>
 
 
 <!-- Home Page Content: -->
@@ -57,7 +57,6 @@ Contact
 
 		Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 	</div>
-
 	<div class="projects-container">
 		<div class="img-txt-overlay">OUTSKIRTS</div>
 
@@ -73,36 +72,40 @@ Contact
 		Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 	</div>
 </section>
+<footer class="footer-container">
+	<form>
+		<p class="footer-header">Interested in starting a project?  
+		Let’s talk:</p><br> <!--make this form require valid email syntax-->
+		<input type="text" name="email"><br>
+		<p class="fineprint">We'll never share your email with anyone else.</p> <!--fineprint class used for small text-->
+	</form>
 
+	<div class="location-lists"> <!--use flexbox and make these evenly spaced columns-->
+		<p class="footer-header">New York</p>
+		<p>123 Lane</p>
+		<p>Suite 100</p>
+		<p>Albany, NY 12345</p>
+		<p>202 555 0144</p>
+	</div>
 
-<!-- FOOTER CONTENT
-Interested in starting a project?  
-Let’s talk:
+	<div class="location-lists">
+		<p class="footer-header">Florida</p>
+		<p>Ocean Drive</p>
+		<p>Suite 201</p>
+		<p>Orlando, FL 22345</p>
+		<p>502 555 0144</p>
+	</div>
 
-Enter email
+	<div class="location-lists">
+		<p class="footer-header">California</p>
+		<p>Mountain Street</p>
+		<p>Suite 105</p>
+		<p>San Diego, CA 22345</p>
+		<p>702 555 0144</p>
+	</div>
 
-We'll never share your email with anyone else.
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
-Copyright © 2018 Smith and Jones
--->
+	<div class="copyright"><p class="fineprint">Copyright © 2018 Smith and Jones</p></div>
+</footer>
 	<script src="js/index.js"></script>
 </body>
 </html>
