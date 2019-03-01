@@ -134,3 +134,22 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.nav-container {
+  display: flex;
+  height: 40px;
+  background-color: #9AA4AE;
+  color: #222222;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav-container .nav-item-container a {
+  text-decoration: none;
+  color: white;
+}
