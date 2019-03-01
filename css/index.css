@@ -151,12 +151,31 @@ table {
   color: white;
   margin: 20px;
 }
+.row {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  height: 300px;
+  justify-content: space-between;
+}
+.row .row-img {
+  height: 100%;
+}
+.row .row-title-h3 {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
+}
+html {
+  height: 100%;
 }
 body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 62.5%;
+  height: 100%;
 }
 .main-container {
   width: 80%;
