@@ -134,20 +134,46 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.header-container {
+  position: relative;
+  width: 100%;
+}
+.header-container img {
+  width: 100%;
+}
+.header-container h1 {
+  position: absolute;
+  top: 59%;
+  left: 5%;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin: 20px;
+}
 * {
   box-sizing: border-box;
 }
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  font-size: 62.5%;
+}
+.main-container {
+  width: 80%;
+  margin: 0 auto;
 }
 .nav-container {
   display: flex;
+  font-size: 1.2rem;
   height: 40px;
   background-color: #9AA4AE;
-  color: #222222;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  color: white;
+}
+.nav-container .nav-logo {
+  font-weight: bold;
 }
 .nav-container .nav-item-container a {
   text-decoration: none;
