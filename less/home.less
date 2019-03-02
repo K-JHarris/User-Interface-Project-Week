@@ -17,15 +17,33 @@
 .row {
     display: flex;
     align-items: center;
-    height: 300px;
-    padding: 25px;
-}
-
-.text-container{
-    p{
-        width: 90%
+    padding: 20px;
+    margin-top: 15px;
+    .text-container{
+        h3{
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 15px
+        }
+        p{
+            width: 90%;
+            font-size: .8rem;
+            line-height: 20px;
+        }
+        .row-btn {
+            width: 125px;
+            height: 37px;
+            background-color: white;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        .row-btn:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 }
+
 
 .img-container{
     width: 100%;
