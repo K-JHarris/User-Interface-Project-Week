@@ -185,6 +185,65 @@ table {
 .img-container img {
   width: 95%;
 }
+.column-row {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.column-row h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.column-row .img-txt-overlay {
+  height: 80px;
+  width: 250px;
+  background-color: #D8D8D8;
+  text-align: center;
+  align-self: flex-end;
+  border: 1px solid white;
+  padding-top: 29px;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  position: absolute;
+  z-index: 5;
+}
+.column-row .img-overlay {
+  position: absolute;
+}
+.column-row .jumbotron-container {
+  margin-top: 35px;
+  position: relative;
+}
+.column-row .jumbotron-container img {
+  width: 100%;
+}
+.column-row .jumbotron-container .villas {
+  right: 1px;
+  top: 160px;
+}
+.column-row .jumbotron-container .outskirts {
+  top: 160px;
+}
+.column-row .jumbotron-container .theblocks {
+  right: 1px;
+  top: 160px;
+}
+.column-row .column-row-txt {
+  margin-top: 250px;
+}
+.column-row .column-row-txt-blocks {
+  margin-top: 40px;
+}
+.column-row p {
+  font-size: 0.8rem;
+  width: 55%;
+  margin: 0 auto;
+  line-height: 20px;
+  margin-top: 60px;
+}
+.column-row .bottom-text {
+  margin-top: 20px;
+}
 * {
   box-sizing: border-box;
 }

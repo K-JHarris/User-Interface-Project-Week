@@ -44,10 +44,72 @@
     }
 }
 
-
 .img-container{
     width: 100%;
     img{
         width: 95%
+    }
+}
+
+.column-row {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .img-txt-overlay {
+        height: 80px;
+        width: 250px;
+        background-color: #D8D8D8;
+        text-align: center;
+        align-self: flex-end;
+        border: 1px solid white;
+        padding-top: 29px;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .img-overlay{
+        position: absolute;
+    }
+
+    .jumbotron-container{
+        margin-top: 35px;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .villas{
+            right: 1px;
+            top: 160px;
+        }
+        .outskirts{
+            top: 160px
+        }
+        .theblocks{
+            right: 1px;
+            top: 160px;
+        }
+    }
+
+    .column-row-txt{
+        margin-top: 250px;
+    }
+    .column-row-txt-blocks{
+        margin-top: 40px;
+    }
+    p {
+        font-size: .8rem;
+        width: 55%;
+        margin: 0 auto;
+        line-height: 20px;
+        margin-top: 60px;
+    }
+    .bottom-text {
+        margin-top: 20px;
     }
 }
