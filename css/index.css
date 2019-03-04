@@ -134,6 +134,13 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.services-titlecard {
+  padding: 30px;
+  margin: 5px;
+}
+.services .row {
+  margin-top: 0;
+}
 .header-container {
   position: relative;
   width: 100%;
@@ -144,7 +151,7 @@ table {
 }
 .header-container h1 {
   position: absolute;
-  top: 59%;
+  top: 65%;
   left: 2%;
   width: 50%;
   font-size: 3rem;
@@ -183,7 +190,7 @@ table {
   width: 100%;
 }
 .img-container img {
-  width: 95%;
+  width: 90%;
 }
 .column-row {
   padding: 20px;
@@ -219,20 +226,20 @@ table {
 }
 .column-row .jumbotron-container .villas {
   right: 1px;
-  top: 160px;
+  top: 210px;
 }
 .column-row .jumbotron-container .outskirts {
-  top: 160px;
+  top: 210px;
 }
 .column-row .jumbotron-container .theblocks {
   right: 1px;
-  top: 160px;
+  top: 210px;
 }
 .column-row .column-row-txt {
-  margin-top: 250px;
+  margin-top: 320px;
 }
 .column-row .column-row-txt-blocks {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 .column-row p {
   font-size: 0.8rem;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -11,28 +12,69 @@
 </head>
 
 <body>
+<div class="main-container services"><!-- Main Container -->
+<nav class="nav-container">
+	<p class="nav-logo">S&J</p>
 
-	<h1>Services</h1>
+	<div class="nav-item-container"> <!--this will be the hamburger-->
+		<a href="#" class="nav-item">Home</a>
+		<a href="#" class="nav-item">Services</a>
+		<a href="#" class="nav-item">Contact</a>
+	</div>
+</nav>
+<!-- page specific content -->
+<!---->
 
-<!-- Services Content 
-  Services
-  
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
+<header class= "header-container">
+		<img src="img/services/services-jumbotron.png";>
+		<h1 class= "header-txt">
+			Services
+		</h1>
+</header>
 
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
+<section class="services row">
+	<div class="text-container">
+		<p class="services-titlecard">Services include: completely syngergize resource taxing relationships via premier niche markets. Professionally cultive one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service</p>
+</section>
 
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
+<!---->
+<!-- page specific content end -->
+<footer class="footer-container">
+	<form>
+		<p class="footer-header">Interested in starting a project?</p>
+		<p class="footer-header">Let’s talk:</p> <!--make this form require valid email syntax-->
+		<input type="text" name="email"><br>
+		<p class="fineprint">We'll never share your email with anyone else.</p> <!--fineprint class used for small text-->
+	</form>
 
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+	<div class="location-lists"> <!--use flexbox and make these evenly spaced columns-->
+		<p class="footer-header">New York</p>
+		<p>123 Lane</p>
+		<p>Suite 100</p>
+		<p>Albany, NY 12345</p>
+		<p>202 555 0144</p>
+	</div>
 
+	<div class="location-lists">
+		<p class="footer-header">Florida</p>
+		<p>Ocean Drive</p>
+		<p>Suite 201</p>
+		<p>Orlando, FL 22345</p>
+		<p>502 555 0144</p>
+	</div>
 
-
--->
-
-	<script src="js/index.js"></script>
+	<div class="location-lists">
+		<p class="footer-header">California</p>
+		<p>Mountain Street</p>
+		<p>Suite 105</p>
+		<p>San Diego, CA 22345</p>
+		<p>702 555 0144</p>
+	</div>
+	
+<div class="copyright"><p class="fineprint">Copyright © 2018 Smith and Jones</p></div>
+</footer>
+</div>	<!-- Main Container  End -->
+<script src="js/index.js"></script>
 </body>
 </html>
+<!-- boop -->
