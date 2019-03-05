@@ -141,6 +141,37 @@ table {
 .services .row {
   margin-top: 0;
 }
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 0;
+  width: 100%;
+}
+.tabs p {
+  padding-top: 12px;
+}
+.tabs .tab {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 40px;
+  width: 170px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  border: 1px solid black;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tab:hover {
+  background-color: #5E9FB9;
+  color: white;
+}
+.tabs .active-tab {
+  background-color: #5E9FB9;
+  color: white;
+}
 .header-container {
   position: relative;
   width: 100%;
