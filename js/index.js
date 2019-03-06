@@ -4,7 +4,7 @@ class TabLink {
       this.tabElement = tabElement;
       this.tabData = this.tabElement.dataset.tab; 
 
-      this.cards = document.querySelectorAll(`.about-card[data-tab='${this.tabData}']`)
+      this.cards = document.querySelectorAll(`.toggle[data-tab='${this.tabData}']`)
 
       this.cards = Array.from(this.cards).map(card => new TabCard(card));
       this.tabElement.addEventListener(`click`, () => this.selectTab());
@@ -14,7 +14,7 @@ class TabLink {
       const tabs = document.querySelectorAll('.tab');
       tabs.forEach(item => item.classList.remove('active-tab'));
 
-      const cards = document.querySelectorAll('.about-card');
+      const cards = document.querySelectorAll('.toggle');
       cards.forEach(item => (item.style.display = "none"));
 
       this.tabElement.classList.add('active-tab');
