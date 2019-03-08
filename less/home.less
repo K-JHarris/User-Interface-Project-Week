@@ -3,7 +3,7 @@
     width: 100%;
     img{
         width: 100%;
-        height: 20%;
+        height: 575px;
     } 
     h1 {
         position: absolute;
@@ -77,40 +77,15 @@
         position: absolute;
     }
 
-    .jumbotron-container{
-        margin-top: 35px;
-        position: relative;
-        img {
-            width: 100%;
-        }
-        .villas{
-            right: 1px;
-            top: 210px;
-        }
-        .outskirts{
-            top: 210px
-        }
-        .theblocks{
-            right: 1px;
-            top: 210px;
-        }
-    }
-
-    .column-row-txt{
-        margin-top: 320px;
-    }
-    .column-row-txt-blocks{
-        margin-top: 45px;
-    }
     p {
         font-size: .8rem;
         width: 55%;
-        margin: 0 auto;
+        margin: 30px auto;
         line-height: 20px;
-        margin-top: 60px;
     }
     .bottom-text {
         margin-top: 20px;
+        margin-bottom: 5px;
     }
 }
 
@@ -152,4 +127,50 @@
     .fineprint {
         color: white;
     }
+}
+
+.img-txt-bg {
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.villas {
+    background-image: url(../img/home/home-villas-img.png);
+}
+.outskirts {
+    background-image: url(../img/home/home-outskirts-img.png);
+}
+.blocks {
+    background-image: url(../img/home/home-the-blocks-img.png);
+}
+
+.jumbotron-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .img-txt {
+      width: 30%;
+      padding: 3% 6%;
+      text-align: center;
+      letter-spacing: 0.4rem;
+      background-color: #D8D8D8;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 65%;
+      left: 70%;
+    }
+
+    .img-txt-right{
+        padding: 3% 6%;
+        text-align: center;
+        letter-spacing: 0.4rem;
+        background-color: #D8D8D8;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 73%;
+        overflow: wrap;
+      }
 }
