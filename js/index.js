@@ -33,5 +33,3 @@ class TabCard {
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 
 this.cards = document.querySelectorAll(`.about-card[data-tab='${this.tabData}']`);
-
-//nav script

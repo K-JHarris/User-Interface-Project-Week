@@ -12,17 +12,31 @@
 </head>
 
 <body>
-<!-- <h1>You got this!  Good luck.</h1> -->
+
 <div class="main-container"><!-- Main Container -->
-	<nav class="nav-container">
-		<p class="nav-logo">S&J</p>
-	
-		<div class="nav-item-container"> <!--this will be the hamburger-->
-			<a href="#" class="nav-item">Home</a>
+<nav class="navContainerClosed">
+		<div class="navClosed">
+			<p class="navLogo">S&J</p>
+		</div>
+		<div class="navIcon open"></div>
+</nav>
+
+<nav class="navContainerOpen hidden">
+	<div class="navOpen">
+		<nav class="navContainerClosed">
+			<div class="navClosed">
+				<p class="navLogo">S&J</p>
+			</div>
+		<div class="navIcon closed"></div>
+		</nav>
+		<div class="menu-items">
+			<a href="/index.html" class="nav-item">Home</a>
 			<a href="/services.html" class="nav-item">Services</a>
 			<a href="#" class="nav-item">Contact</a>
 		</div>
-	</nav>
+	</div>
+</nav>
+
 <!-- page specific content -->
 	<header class= "header-container"> <!--image-->
 		<img src="img/home/home-jumbotron.png";>
@@ -34,19 +48,24 @@
 	</header>
 
 	<section class="row">
-		<div class="text-container">
+		<div class="row-content">
+			<div class="text-content">
 			<h3>Smith & Jones Architects</h3>
 			<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
 			<button class="row-btn">Learn More</button>
+			</div>
+			<img src="/img/home/home-img-1.png">
 		</div>
-		<div class="img-container"><img src="/img/home/home-img-1.png"></div>
 	</section>
+
 	<section class="row">
-			<div class="img-container"><img src="/img/home/home-img-2.png"></div>
-			<div class="text-container">
-				<h3>Futuristic Designs</h3>
-				<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
-				<button class="row-btn">View Designs</button>
+			<div class="row-content">
+				<img class="img-left" src="/img/home/home-img-2.png">
+				<div class="text-content">
+					<h3>Futuristic Designs</h3>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+					<button class="row-btn">Learn More</button>
+				</div>
 			</div>
 	</section>
 
@@ -117,6 +136,7 @@
 </footer>
 </div>	<!-- Main Container end -->
 <script src="js/index.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
 <!-- boop -->

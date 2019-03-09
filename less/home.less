@@ -4,31 +4,73 @@
     img{
         width: 100%;
         height: 575px;
+        @media @mobile {
+            height: 20%;
+        }
     } 
     h1 {
         position: absolute;
         top: 65%;
         left: 2%;
         width: 50%;
-        .h1()
+        .h1();
+        @media @mobile {
+            font-size: 2rem;
+            top: 25%
+        }
     }
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    padding: 20px;
     margin-top: 15px;
-    .text-container{
+    @media @mobile {
+        flex-direction: column;
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .row-content{
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        display: flex;
+        @media @mobile{
+            width: 100%;
+            flex-direction: column; 
+            margin-bottom: 20px;
+        }
+        img {
+            width: 50%;
+            @media @mobile {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .img-left {
+            margin-right: 35px;
+        }
+        .text-content {
+            margin-top: 65px;
+            width: 50%;
+            @media @mobile {
+                order: 1;
+                width: 100%;
+                margin: 0;
+            }
+        }
         h3{
             font-weight: bold;
             font-size: 1.5rem;
             margin-bottom: 15px
         }
         p{
-            width: 90%;
+            width: 100%;
             font-size: .8rem;
             line-height: 20px;
+            @media @mobile {
+                width: 100%;
+            }
         }
         .row-btn {
             width: 125px;
@@ -36,6 +78,9 @@
             background-color: white;
             border: 1px solid black;
             margin-top: 20px;
+            @media @mobile {
+                width: 100%;
+            }
         }
         .row-btn:hover {
             cursor: pointer;
@@ -55,26 +100,17 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    @media @mobile {
+        width: 100%;
+        padding: 0;
+    }
     h2 {
         font-weight: bold;
         font-size: 1.5rem;
-    }
-    .img-txt-overlay {
-        height: 80px;
-        width: 250px;
-        background-color: #D8D8D8;
-        text-align: center;
-        align-self: flex-end;
-        border: 1px solid white;
-        padding-top: 29px;
-        font-size: 1.2rem;
-        letter-spacing: 5px;
-        position: absolute;
-        z-index: 5;
-    }
-
-    .img-overlay{
-        position: absolute;
+        @media @mobile {
+            margin-top: 20px;
+            padding: 0 15px 0 15px;
+        }
     }
 
     p {
@@ -82,50 +118,15 @@
         width: 55%;
         margin: 30px auto;
         line-height: 20px;
+        @media @mobile {
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
     }
     .bottom-text {
         margin-top: 20px;
         margin-bottom: 5px;
-    }
-}
-
-.footer-container{
-    display: flex;
-    background-color: #828282;
-    height: 155px;
-    align-items: stretch;
-    padding: 20px;
-    padding-top: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-    .location-lists{
-        width: 20%;
-        color: #ffffff;
-        font-size: .6rem;
-        margin-bottom: 10px;
-        p{
-            margin-bottom: 10px;
-        }
-    }
-    .footer-header{
-        color: white;
-        font-size: .9rem;
-        margin-bottom: 7px;
-        font-weight: bold;
-    }
-    form{
-        margin-right: 50px;
-        input{
-            margin-bottom: 15px;
-            margin-top: 5px;
-            border-radius: 3px;
-            border: none;
-            height: 20px;
-            width: 100%;
-        }
-    }
-    .fineprint {
-        color: white;
     }
 }
 
@@ -161,6 +162,13 @@
       position: absolute;
       top: 65%;
       left: 70%;
+      @media @mobile {
+          width: 95%;
+          height: 80px;
+          left: 2.5%;
+          top: 85%;
+          line-height: 65px;
+      }
     }
 
     .img-txt-right{
@@ -172,5 +180,12 @@
         position: absolute;
         top: 73%;
         overflow: wrap;
+        @media @mobile {
+            width: 95%;
+            height: 80px;
+            left: 2.5%;
+            top: 85%;
+            line-height: 65px;
+        }
       }
 }
